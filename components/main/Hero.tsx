@@ -11,6 +11,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import GreenComponents from "../sub/GreenComponents";
+import BoxComponent from "../sub/BoxComponent";
 
 const Hero = () => {
   return (
@@ -64,15 +66,7 @@ const Hero = () => {
           <CarouselNext />
           <CarouselPrevious />
         </Carousel>
-        <div className="relative">
-          <div className="relative bg-[#1cba9f] bg-[url('/images/background/1.png')] bg-no-repeat bg-left before:content-[''] before:absolute before:inset-0 before:bg-[#1cba9f]/80 before:z-0">
-            <div className="w-3/4 mx-auto relative z-10">
-              <h1 className="text-white py-[42px] text-[36px] font-[700] w-fit">
-                Welcome to Pure Pride Pharma Private Limited
-              </h1>
-            </div>
-          </div>
-        </div>
+        <GreenComponents />
       </section>
       <section className="py-[100px] flex flex-col w-full">
         <div className="w-3/4 mx-auto">
@@ -88,24 +82,48 @@ const Hero = () => {
           </div>
           <div className="flex flex-wrap">
             {Array.from({ length: 6 }).map((_, index) => (
-              <div
-                key={index}
-                className="w-4/12 py-[50px] px-[30px]"
-              >
-                <CiDeliveryTruck className="h-10 w-10 text-[#1bb399]"/>
+              <div key={index} className="w-4/12 py-[50px] px-[30px]">
+                <CiDeliveryTruck className="h-10 w-10 text-[#1bb399]" />
                 <h1 className="text-[22px] font-bold text-[#222222]">
                   High Efficiency
                 </h1>
                 <p className="font-[17px] leading-[1.7em] mt-[12px] text-[#000000]/70">
-                  We have high quality, affordable and innovative
-                  medicines solutions as per customer's choice and requirement.
+                  We have high quality, affordable and innovative medicines
+                  solutions as per customer's choice and requirement.
                 </p>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <section className="py-[100px]"></section>
+      <BoxComponent />
+      <section className="mt-40 w-3/4 text-center mb-[1000000px]">
+        <h1 className="max-w-[800px] mx-auto text-[#222] text-[46px] leading-[1.2em] font-[700] carousel-speacial-2">
+          Our Latest Product
+        </h1>
+        <p className="max-w-[850px] mx-auto text-[#313131] text-[18px] font-[500] leading-[1.8em] mt-[18px] mb-[50px] ">
+          The company is dedicated to boosting access to high-quality healthcare
+          services by producing and marketing reasonably priced pharmaceutical
+          products.
+        </p>
+        <div className="flex overflow-hidden">
+          {Array.from({ length: 10 }).map((_, index) => (
+            <div key={index} className="mr-10">
+              <Image
+                src="/products/arzino.png"
+                height={300}
+                width={300}
+                alt="product"
+                className="max-w-[250px] h-auto"
+              ></Image>
+              <div className="border-[1px] border-[#f5f5f5] pb-[32px] ">
+                <h1 className="mt-[10px] text-[20px] leading-[1.3em] font-[700] ">Arzino</h1>
+                <p className="text-[#222] font-[400] mt-[4px] text-[13px] ">Rs. 150</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 };

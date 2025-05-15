@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* slanting line  */}
-      <div className="-ml-45 h-full w-4/12 absolute -top-35 bg-linear-to-l from-[#1db9a0] to-[#4d94c4] pr-[1px] rotate-[25deg] z-1">
+      <div className=" h-full w-4/12 absolute -top-35 -left-40 bg-linear-to-l from-[#1db9a0] to-[#4d94c4] pr-[1px] -skew-x-[25deg] z-1">
         <div className="bg-white h-full w-full"></div>
       </div>
     </header>
