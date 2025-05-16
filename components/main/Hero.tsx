@@ -90,7 +90,7 @@ const Hero = () => {
                 </h1>
                 <p className="font-[17px] leading-[1.7em] mt-[12px] text-[#000000]/70">
                   We have high quality, affordable and innovative medicines
-                  solutions as per customer's choice and requirement.
+                  solutions as per customer&apos;s choice and requirement.
                 </p>
               </div>
             ))}
