@@ -13,11 +13,12 @@ import {
 } from "@/components/ui/carousel";
 import GreenComponents from "../sub/GreenComponents";
 import BoxComponent from "../sub/BoxComponent";
-
+import { IoPricetagOutline } from "react-icons/io5";
+import { GiMedicines } from "react-icons/gi";
 const Hero = () => {
   return (
     <>
-      <section className="z-3">
+      <section className="z-3 ">
         <Carousel className="w-full h-full" opts={{ loop: true }}>
           <CarouselContent>
             {Array.from({ length: 3 }).map((_, index) => (
@@ -68,7 +69,7 @@ const Hero = () => {
         </Carousel>
         <GreenComponents />
       </section>
-      <section className="py-[100px] flex flex-col w-full">
+      <section className="py-[100px] flex flex-col w-full bg-white">
         <div className="w-3/4 mx-auto">
           <div className="mb-[50px] flex flex-col items-center">
             <h1 className="text-[46px] text-[#222222] font-bold">
@@ -97,31 +98,71 @@ const Hero = () => {
         </div>
       </section>
       <BoxComponent />
-      <section className="mt-40 w-3/4 text-center mb-[1000000px]">
-        <h1 className="max-w-[800px] mx-auto text-[#222] text-[46px] leading-[1.2em] font-[700] carousel-speacial-2">
-          Our Latest Product
-        </h1>
-        <p className="max-w-[850px] mx-auto text-[#313131] text-[18px] font-[500] leading-[1.8em] mt-[18px] mb-[50px] ">
-          The company is dedicated to boosting access to high-quality healthcare
-          services by producing and marketing reasonably priced pharmaceutical
-          products.
-        </p>
-        <div className="flex overflow-hidden">
-          {Array.from({ length: 10 }).map((_, index) => (
-            <div key={index} className="mr-10">
-              <Image
-                src="/products/arzino.png"
-                height={300}
-                width={300}
-                alt="product"
-                className="max-w-[250px] h-auto"
-              ></Image>
-              <div className="border-[1px] border-[#f5f5f5] pb-[32px] ">
-                <h1 className="mt-[10px] text-[20px] leading-[1.3em] font-[700] ">Arzino</h1>
-                <p className="text-[#222] font-[400] mt-[4px] text-[13px] ">Rs. 150</p>
+      <section className="w-full bg-white">
+        <div className="mt-40 w-3/4 text-center bg-white mx-auto">
+          <h1 className="max-w-[800px] mx-auto text-[#222] text-[46px] leading-[1.2em] font-[700] carousel-speacial-2">
+            Our Latest Product
+          </h1>
+          <p className="max-w-[850px] mx-auto text-[#313131] text-[18px] font-[500] leading-[1.8em] mt-[18px] mb-[50px] ">
+            The company is dedicated to boosting access to high-quality
+            healthcare services by producing and marketing reasonably priced
+            pharmaceutical products.
+          </p>
+          <div className="flex overflow-hidden">
+            {Array.from({ length: 10 }).map((_, index) => (
+              <div key={index} className="mr-10">
+                <Image
+                  src="/products/arzino.png"
+                  height={300}
+                  width={300}
+                  alt="product"
+                  className="max-w-[250px] h-auto"
+                ></Image>
+                <div className="border-[1px] border-[#f5f5f5] pb-[32px] ">
+                  <h1 className="mt-[10px] text-[20px] leading-[1.3em] font-[700] ">
+                    Arzino
+                  </h1>
+                  <p className="text-[#222] font-[400] mt-[4px] text-[13px] ">
+                    Rs. 150
+                  </p>
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full relative">
+        <div className="min-h-[35vh] text-white flex">
+          <div
+            className="bg-[rgba(34,58,102)] p-10 text-center w-1/2 flex justify-center items-center gap-5 
+          bg-[url('/background/5.jpg')] bg-no-repeat bg-left before:content-[''] before:absolute before:inset-0 before:bg-[rgba(34,58,102)]/80 before:w-1/2 before:z-0"
+          >
+            <div className="text-6xl mb-2 -translate-y-2 z-1">
+              <IoPricetagOutline />
             </div>
-          ))}
+            <h2 className="text-2xl text-[46px] text-white carousel-special-2 font-[700] z-1">
+              Best Quality Products
+            </h2>
+          </div>
+          <div className="bg-[rgba(28,186,159)] p-10 text-center w-1/2 flex justify-center items-center gap-5 bg-[url('/background/6.jpg')] bg-no-repeat bg-right before:content-[''] before:absolute before:ml-auto before:bg-[rgba(28,186,159)]/80 before:z-0 before:inset-0 before:w-1/2">
+            <div className="text-7xl mb-2 translate-y-2 z-1">
+              <GiMedicines />
+            </div>
+            <h2 className="text-2xl text-[46px] text-white carousel-special-2 font-[700] z-1">
+              Sale Center
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-16">
+        <div className="flex gap-10 overflow-hidden">
+          <Image src={"/clients/1.png"} width={200} height={200} alt="client" />
+          <Image src={"/clients/2.png"} width={200} height={200} alt="client" />
+          <Image src={"/clients/3.png"} width={200} height={200} alt="client" />
+          <Image src={"/clients/4.png"} width={200} height={200} alt="client" />
+          <Image src={"/clients/5.png"} width={200} height={200} alt="client" />
         </div>
       </section>
     </>

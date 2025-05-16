@@ -8,7 +8,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <header className="bg-white w-full">
+    <header className="bg-white w-full z-1">
       {/* Top Header  */}
       <div
         className="h-11 bg-linear-to-r from-[#1db9a0] to-[#4d94c4] flex justify-around items-center  
