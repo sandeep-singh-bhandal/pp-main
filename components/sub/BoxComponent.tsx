@@ -5,7 +5,7 @@ const BoxComponent = () => {
   return (
     <section className="bg-white w-full">
       <div className="relative flex w-8/12 gap-25 justify-center mx-auto mt-10">
-        <div className="w-1/2 ">
+        <div className="w-1/2 z-0">
           <div className="w-[500px] h-[500px]">
             <Image
               src={"/about1.jpg"}
