@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-const BoxComponent = () => {
+const BoxComponent = ({ reverse }: { reverse: boolean }) => {
   return (
-    <section className="bg-white w-full">
-      <div className="relative flex w-8/12 gap-25 justify-center mx-auto mt-10">
+    <section className="bg-white w-full pb-40">
+      <div className={`relative flex w-8/12 gap-25 justify-center mx-auto mt-10 ${reverse&&'flex-row-reverse'}`}>
         <div className="w-1/2 z-0">
           <div className="w-[500px] h-[500px]">
             <Image
@@ -14,8 +14,8 @@ const BoxComponent = () => {
               alt="image"
               className="-translate-10 shadow-[0_0_25px_rgba(0,0,0,0.5)]"
             />
-            <div className="h-[500px] w-[500px] bg-white opacity-90 absolute left-0 top-0 -z-2 -translate-5 shadow-[0_0_25px_rgba(0,0,0,0.5)]"></div>
-            <div className="h-[500px] w-[500px] bg-[#15927D] absolute left-0 top-0 -z-3 shadow-[0_0_25px_rgba(0,0,0,0.5)]">
+            <div className={`h-[500px] w-[500px] bg-white opacity-90 absolute  ${reverse?'right-0':'left-0'} top-0 -z-2 -translate-5 shadow-[0_0_25px_rgba(0,0,0,0.5)]`}></div>
+            <div className={`h-[500px] w-[500px] bg-[#15927D] absolute  ${reverse?'right-0':'left-0'} top-0 -z-3 shadow-[0_0_25px_rgba(0,0,0,0.5)]`}>
               <Image
                 src={"/icons/video-icon-1.png"}
                 height={80}
@@ -31,7 +31,7 @@ const BoxComponent = () => {
                 className="absolute bottom-[-58px] left-5/12"
               />
             </div>
-            <div className="h-[500px] w-[500px] bg-white opacity-90 absolute left-0 top-0 -z-4 translate-5 shadow-[0_0_25px_rgba(0,0,0,0.5)]"></div>
+            <div className={`h-[500px] w-[500px] bg-white opacity-90 absolute ${reverse?'right-0':'left-0'} top-0 -z-4 translate-5 shadow-[0_0_25px_rgba(0,0,0,0.5)]`}></div>
           </div>
         </div>
         <div className="w-1/2">
