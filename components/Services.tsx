@@ -17,8 +17,8 @@ const Services = () => {
           </div>
           <div className="flex flex-wrap">
             {Array.from({ length: 6 }).map((_, index) => (
-              <div key={index} className="w-4/12 py-[50px] px-[30px]">
-                <CiDeliveryTruck className="h-10 w-10 text-[#1bb399]" />
+              <div key={index} className="w-4/12 max-sm:w-full py-[50px] px-[30px]">
+                <CiDeliveryTruck className="h-10 w-10 text-[#1bb399]"/>
                 <h1 className="text-[22px] font-bold text-[#222222]">
                   High Efficiency
                 </h1>

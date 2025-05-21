@@ -71,7 +71,7 @@ const Hero = () => {
         </Carousel>
         <GreenOverlay />
         <Services />
-        <section className="w-full relative">
+        <section className="w-full relative max-sm:hidden">
           <div className="min-h-[35vh] text-white flex">
             <div
               className="bg-[rgba(34,58,102)] p-10 text-center w-1/2 flex justify-center items-center gap-5 

@@ -7,8 +7,8 @@ const Footer = () => {
     <>
       {/* upper part */}
       <section className="w-full bg-[#f8fafc]">
-        <div className="w-3/4 mx-auto flex gap-10 pt-28 pb-18 ">
-          <div className="flex flex-col w-1/2">
+        <div className="w-3/4 mx-auto flex max-sm:flex-wrap gap-10 pt-28 pb-18 ">
+          <div className="flex flex-col w-1/2 max-sm:w-full">
             <Image src="/images/logo.png" height={170} width={170} alt="logo" />
             <p className="ml-2">
               In order to maintain defined quality standards, these medicines
@@ -16,7 +16,7 @@ const Footer = () => {
               the guidance of our quality experts.
             </p>
           </div>
-          <div className="flex flex-col w-1/4 gap-3">
+          <div className="flex flex-col w-1/4 gap-3 max-sm:w-1/2">
             <h1 className="carousel-special-2 font-bold text-[22px] ">
               Explore
             </h1>
@@ -25,7 +25,7 @@ const Footer = () => {
             <Link href={"#"}>Contact Us</Link>
             <Link href={"#"}>Privacy Policy</Link>
           </div>
-          <div className="flex flex-col w-1/4 gap-3">
+          <div className="flex flex-col w-1/4 gap-3 max-sm:w-1/2">
             <h1 className="carousel-special-2 font-bold text-[22px]">
               Reach Us
             </h1>
