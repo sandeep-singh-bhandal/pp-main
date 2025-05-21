@@ -2,14 +2,14 @@
 import * as React from "react";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
-import { Card, CardContent } from "@/components/ui/Card";
+import { Card, CardContent } from "@/components/ShadCN/Card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/Carousel";
+} from "@/components/ShadCN/Carousel";
 import GreenOverlay from "../components/GreenOverlay";
 import { IoPricetagOutline } from "react-icons/io5";
 import { GiMedicines } from "react-icons/gi";

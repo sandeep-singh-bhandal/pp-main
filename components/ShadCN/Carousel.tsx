@@ -7,7 +7,7 @@ import useEmblaCarousel, {
 import { IoIosArrowForward,IoIosArrowBack } from "react-icons/io";
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/Button"
+import { Button } from "@/components/ShadCN/Button"
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>

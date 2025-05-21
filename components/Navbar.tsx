@@ -34,8 +34,8 @@ const Navbar = () => {
         <div className="w-8/12 flex py-8 px-16 gap-10 font-[600] text-md">
           <Link href={"/"}>Home</Link>
           <Link href={"/about"}>About Us</Link>
-          <Link href={""}>Our Products</Link>
-          <Link href={""}>Contact Us</Link>
+          <Link href={"/products"}>Our Products</Link>
+          <Link href={"/contact"}>Contact Us</Link>
         </div>
       </div>
     </header>

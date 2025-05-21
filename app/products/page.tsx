@@ -1,11 +1,16 @@
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import Products from '@/pages/Products'
 import React from 'react'
 
-const Products = () => {
+const Productspage = () => {
   return (
-    <div>
-      
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <Navbar />
+      <Products/>
+      <Footer />
+    </main>
   )
 }
 
-export default Products
+export default Productspage
