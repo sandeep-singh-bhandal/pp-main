@@ -35,7 +35,7 @@ const BoxComponent = ({ reverse }: { reverse: boolean }) => {
           </div>
         </div>
         <div className="w-1/2">
-          <h1 className="text-[46px] mb-[35px] text-[#223a66] font-[700] carousel-special-2">
+          <h1 className="text-[46px] mb-[35px] text-[#223a66] font-[700] exo">
             About Us
           </h1>
           <p className="text-[18px] text-[#223a66] mb-[20px] leading-[1.7em] ">

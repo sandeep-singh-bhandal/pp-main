@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex flex-col w-1/4 gap-3 max-sm:w-1/2">
-            <h1 className="carousel-special-2 font-bold text-[22px] ">
+            <h1 className="exo font-bold text-[22px] ">
               Explore
             </h1>
             <Link href={"#"}>About Us</Link>
@@ -26,7 +26,7 @@ const Footer = () => {
             <Link href={"#"}>Privacy Policy</Link>
           </div>
           <div className="flex flex-col w-1/4 gap-3 max-sm:w-1/2">
-            <h1 className="carousel-special-2 font-bold text-[22px]">
+            <h1 className="exo font-bold text-[22px]">
               Reach Us
             </h1>
             <Link href={"#"}>

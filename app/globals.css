@@ -126,9 +126,12 @@
   }
 }
 
-.carousel-special {
+.playfair-display {
   font-family: "Playfair Display", serif; 
 }
-.carousel-special-2{
+.exo{
   font-family: "Exo", sans-serif;
+}
+.roboto{
+  font-family: "Roboto", sans-serif;
 }

@@ -37,10 +37,10 @@ const Hero = () => {
                       />
                       <div className="absolute top-0 flex items-center justify-between w-full h-full">
                         <div className="flex flex-col h-full justify-center w-1/2 pl-50">
-                          <h1 className="text-white underline text-[26px] mb-[18px] carousel-special italic font-[700]">
+                          <h1 className="text-white underline text-[26px] mb-[18px] playfair-display italic font-[700]">
                             Pharmaceutical
                           </h1>
-                          <span className="text-[54px] text-white mb-[25px] font-[700] carousel-special-2 leading-[1.2em]">
+                          <span className="text-[54px] text-white mb-[25px] font-[700] exo leading-[1.2em]">
                             Best healthcare <br />
                             solution
                           </span>
@@ -80,7 +80,7 @@ const Hero = () => {
               <div className="text-6xl mb-2 -translate-y-2">
                 <IoPricetagOutline />
               </div>
-              <h2 className="text-2xl text-[46px] text-white carousel-special-2 font-[700] z-1">
+              <h2 className="text-2xl text-[46px] text-white exo font-[700] z-1">
                 Best Quality Products
               </h2>
             </div>
@@ -88,7 +88,7 @@ const Hero = () => {
               <div className="text-7xl mb-2 translate-y-2 z-1">
                 <GiMedicines />
               </div>
-              <h2 className="text-2xl text-[46px] text-white carousel-special-2 font-[700] z-1">
+              <h2 className="text-2xl text-[46px] text-white exo font-[700] z-1">
                 Sale Center
               </h2>
             </div>
