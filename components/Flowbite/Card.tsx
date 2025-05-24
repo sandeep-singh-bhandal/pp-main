@@ -8,7 +8,7 @@ export default function Component() {
   const [mouseOver, setmouseOver] = useState<boolean>(false);
   return (
     <Card
-      className="max-w-xs mb-16 mx-auto cursor-pointer p-3 hover:scale-[1.03] transition-all duration-300"
+      className="max-w-xs mb-16 cursor-pointer p-3 hover:scale-[1.03] transition-all duration-300"
       onMouseEnter={() => setmouseOver(true)}
       onMouseLeave={() => setmouseOver(false)}
       renderImage={() => (

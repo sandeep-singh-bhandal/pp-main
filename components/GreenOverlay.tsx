@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GreenComponents = () => {
+const GreenOverlay = () => {
   return (
     <div className="relative">
           <div className="relative bg-[#1cba9f] bg-[url('/images/background/1.png')] bg-no-repeat bg-left before:content-[''] before:absolute before:inset-0 before:bg-[#1cba9f]/80 before:z-0">
@@ -14,4 +14,4 @@ const GreenComponents = () => {
   )
 }
 
-export default GreenComponents
+export default GreenOverlay

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const BoxComponent = ({ reverse }: { reverse: boolean }) => {
+const MultiLayedBox = ({ reverse }: { reverse: boolean }) => {
   return (
     <section className="bg-white w-full pb-40">
       <div className={`relative flex w-8/12 gap-25 justify-center mx-auto mt-10 ${reverse&&'flex-row-reverse'}`}>
@@ -55,4 +55,4 @@ const BoxComponent = ({ reverse }: { reverse: boolean }) => {
   );
 };
 
-export default BoxComponent;
+export default MultiLayedBox;
