@@ -4,7 +4,15 @@ import { Card } from "flowbite-react";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function Component() {
+export default function Component({
+  name,
+  price,
+  composition,
+}: {
+  name: string;
+  price: string;
+  composition: string;
+}) {
   const [mouseOver, setmouseOver] = useState<boolean>(false);
   return (
     <Card
@@ -15,7 +23,7 @@ export default function Component() {
         <Image
           width={500}
           height={500}
-          src="/products/arzino.png"
+          src={`/products/${name.toLowerCase()}.png`}
           alt="image 1"
         />
       )}
@@ -23,18 +31,19 @@ export default function Component() {
       <div className="relative flex flex-col justify-center items-center">
         <span
           className={`${
-            mouseOver ? "bg-[#1CBA9F] shadow-[0px_4px_10px_rgb(150,150,150,1)] " : "bg-[#223A66]"
+            mouseOver
+              ? "bg-[#1CBA9F] shadow-[0px_4px_10px_rgb(150,150,150,1)] "
+              : "bg-[#223A66]"
           } p-5 text-white rounded-full w-fit mx-auto absolute -top-14 transition-all duration-500`}
         >
           <BsCapsule className="scale-150" />
         </span>
       </div>
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Arzino
+        {name}
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far,
-        in reverse chronological order.
+        {composition}
       </p>
     </Card>
   );
