@@ -7,8 +7,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ShadCN/Carousel";
 import GreenOverlay from "../components/GreenOverlay";
 import { IoPricetagOutline } from "react-icons/io5";

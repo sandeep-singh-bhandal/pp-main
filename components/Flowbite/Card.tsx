@@ -6,7 +6,6 @@ import { useState } from "react";
 
 export default function Component({
   name,
-  price,
   composition,
 }: {
   name: string;

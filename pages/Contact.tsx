@@ -1,11 +1,11 @@
 import React from "react";
 import { MdLocationOn } from "react-icons/md";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
-import { TfiAlarmClock } from "react-icons/tfi";
-import { BsChatDotsFill } from "react-icons/bs";
+// import { FaPhoneVolume } from "react-icons/fa6";
+// import { FaPhoneAlt } from "react-icons/fa";
+// import { TfiAlarmClock } from "react-icons/tfi";
+// import { BsChatDotsFill } from "react-icons/bs";
 import { IoIosMail, IoIosContact } from "react-icons/io";
-import { RiMailSendLine } from "react-icons/ri";
+// import { RiMailSendLine } from "react-icons/ri";
 
 const Contact = () => {
   return (
