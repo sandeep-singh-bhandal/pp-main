@@ -4,6 +4,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { TfiAlarmClock } from "react-icons/tfi";
+import { FiMenu } from "react-icons/fi";
+import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setisOpen] = useState<boolean>(false);
@@ -41,30 +43,45 @@ const Navbar = () => {
           </div>
         </div>
         {/* sidebar */}
-      <div className={`fixed right-0 w-full h-full bg-white sm:hidden z-20 ${isOpen?"translate-x-0":"translate-x-full"} transition-transform duration-300 ease-in-out`}>
-        <div className="flex flex-col items-center justify-center h-full">
-          <Image
-            src="/images/logo.png"
-            alt="PurePride"
-            height={180}
-            width={180}
-            className="absolute top-0 left-0"
-          />
-          <nav className="flex flex-col items-center gap-4 mt-6 font-semibold text-2xl">
-            <Link href={"/"} className="mb-4">
-              Home
-            </Link>
-            <Link href={"/about"} className="mb-4">
-              About Us
-            </Link>
-            <Link href={"/products"} className="mb-4">
-              Our Products
-            </Link>
-            <Link href={"/contact"}>Contact Us</Link>
-          </nav>
+        <div
+          className={`fixed right-0 w-full h-full bg-white sm:hidden z-20 ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out`}
+        >
+          <div className="flex flex-col items-center justify-center h-full">
+            <Image
+              src="/images/logo.png"
+              alt="PurePride"
+              height={180}
+              width={180}
+              className="absolute top-0 left-0"
+            />
+            <nav className="flex flex-col items-center gap-4 mt-6 font-semibold text-2xl">
+              <Link href={"/"} className="mb-4">
+                Home
+              </Link>
+              <Link href={"/about"} className="mb-4">
+                About Us
+              </Link>
+              <Link href={"/products"} className="mb-4">
+                Our Products
+              </Link>
+              <Link href={"/contact"}>Contact Us</Link>
+            </nav>
+          </div>
+          <button
+            onClick={() => setisOpen(!isOpen)}
+            className="absolute right-5 top-6 scale-[2.2] text-gray-700"
+          >
+            <MdClose />
+          </button>
         </div>
-      <button onClick={()=>setisOpen(!isOpen)} className="absolute top-0 right-0">X</button>
-      </div>
+        <button
+          onClick={() => setisOpen(!isOpen)}
+          className="absolute right-5 top-2/5 scale-[2.2] text-gray-700"
+        >
+          <FiMenu />
+        </button>
       </header>
     </>
   );
