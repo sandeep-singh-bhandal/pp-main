@@ -7,9 +7,9 @@ import { products } from "@/constants/config";
 const Product = ({ name }: { name: string }) => {
   return products.map((product, index) => {
     if (
-      product.name.includes(" ")
+      (product.name.includes(" ")
         ? product.name.replace(" ", "-")
-        : product.name.toLowerCase() == name
+        : product.name.toLowerCase()) == name
     ) {
       return (
         <section className="mt-[135px] w-full" key={index}>

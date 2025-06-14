@@ -9,18 +9,18 @@ import { RiMailSendLine } from "react-icons/ri";
 
 const Contact = () => {
   return (
-    <section className="mt-[135px] py-20 w-3/4 mx-auto flex gap-32">
-      <div className="w-1/2">
-        <h1 className="exo text-[46px] text-[#222222] font-[700] ">
+    <section className="max-sm:mt-[80px] mt-[135px] py-20 max-lg:px-6 max-sm:px-3 lg:px-8 md:w-full md:mx-auto flex flex-wrap md:flex-nowrap   max-lg:gap-0 lg:gap-30">
+      <div className="w-full px-4 md:px-10 lg:px-4 lg:w-1/2 ">
+        <h1 className="exo text-4xl md:text-[46px] text-[#222222] font-[700] ">
           Get in Touch
         </h1>
-        <p className="text-[18px] text-[#313131] mt-[15px] font-[500] leading-[1.8em]">
+        <p className="text-[18px] text-[#313131] md:mt-[15px] font-[500] leading-[1.8em]">
           We are awaiting your valued enquiry and the opportunity to offer our
           most competitive quotation.
         </p>
         <div className="flex flex-wrap mt-20">
           {Array.from({ length: 4 }).map((item, index) => (
-            <div className="w-1/2 mb-20" key={index}>
+            <div className="md:w-1/2 md:px-6 mb-10 md:mb-20" key={index}>
               <MdLocationOn className="text-[#1CBA9F] scale-[3.3] mb-8 ml-2" />
               <h1 className="exo text-[22px] mt-[18px] mb-[10px] text-[#22222] font-[700] leading-[1.4em] ">
                 Address
@@ -33,13 +33,13 @@ const Contact = () => {
           ))}
         </div>
       </div>
-      <div className="min-h-screen flex flex-col px-16 pt-24  ml-16 bg-[#223a66e6] w-1/2 h-1/2 text-white">
+      <div className="md:min-h-screen w-10/12 flex flex-col px-6 lg:px-12 py-10 lg:pt-24 mx-auto rounded-xl bg-[#223a66]/90 md:mx-auto lg:mx-0 md:w-2/3 lg:w-2/5 h-1/2 text-white mt-6 md:mt-0">
         <h2 className="text-lg font-semibold mb-3 exo">Enquiry Form</h2>
         <h1 className="text-4xl font-bold mb-10 exo">Drop us a Message</h1>
 
         <form className="space-y-6">
           {Array.from({ length: 4 }).map((item, index) => (
-            <div className="border-b border-gray-500 focus-within:border-[#1CBA9F] transition-all duration-500 flex items-center py-2 relative">
+            <div key={index} className="border-b border-gray-500 focus-within:border-[#1CBA9F] transition-all duration-500 flex items-center py-2 relative">
               <span className="mr-3 text-gray-300">
                 <IoIosContact className="text-white scale-150 absolute top-3" />
               </span>
