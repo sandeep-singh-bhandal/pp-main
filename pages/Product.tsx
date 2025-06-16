@@ -12,7 +12,7 @@ const Product = ({ name }: { name: string }) => {
       ? name.replace("%2B", "+")
       : name; // for handling '+' in the URL
 
-  products.map((product, index) => {
+  return products.map((product, index) => {
     if (
       (product.name.includes(" ")
         ? product.name.replace(" ", "-").toLowerCase()
