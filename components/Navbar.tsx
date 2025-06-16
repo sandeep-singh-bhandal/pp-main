@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="w-3/12 max-sm:w-1/2 bg-[#1db9a0] pr-[2px] -skew-x-[20deg] max-[640px]:pr-0 ">
           <div className="w-full h-full bg-white flex justify-center items-center ">
             <Image
-              src="/images/logo.png"
+              src="/icons/logo.png"
               alt="PurePride"
               height={200}
               width={200}
