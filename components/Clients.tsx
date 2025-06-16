@@ -1,18 +1,23 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const Clients = () => {
   return (
     <section className="my-20 max-sm:mb-10 max-sm:mt-0">
-        <div className="flex justify-center gap-10 max-sm:overflow-hidden">
-          <Image src={"/clients/1.png"} width={200} height={200} alt="client" />
-          <Image src={"/clients/2.png"} width={200} height={200} alt="client" />
-          <Image src={"/clients/3.png"} width={200} height={200} alt="client" />
-          <Image src={"/clients/4.png"} width={200} height={200} alt="client" />
-          <Image src={"/clients/5.png"} width={200} height={200} alt="client" />
-        </div>
-      </section>
-  )
-}
+      <div className="flex justify-center gap-10 max-sm:overflow-hidden">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <Image
+            key={index}
+            src={`/clients/${index + 1}.png`}
+            width={200}
+            height={200}
+            alt={`client-${index + 1}`}
+            className="object-contain"
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
 
-export default Clients
+export default Clients;

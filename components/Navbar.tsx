@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => setisOpen(!isOpen)}
-          className="absolute right-5 top-2/5 scale-[2.2] text-gray-700"
+          className="absolute right-5 top-2/5 scale-[2.2] text-gray-700 sm:hidden"
         >
           <FiMenu />
         </button>

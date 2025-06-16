@@ -1,3 +1,16 @@
+import { GiStarsStack } from "react-icons/gi";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { FaShoppingCart, FaTruck } from "react-icons/fa";
+import { CgPill } from "react-icons/cg";
+import { BiSolidOffer } from "react-icons/bi";
+import { MdLocationOn } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { TfiAlarmClock } from "react-icons/tfi";
+import { IoIosMail } from "react-icons/io";
+import { RiMailSendFill } from "react-icons/ri";
+import { IoIosContact } from "react-icons/io";
+import { IoIosChatbubbles } from "react-icons/io";
+
 export const products = [
   {
     name: "AZEEPURE-200",
@@ -148,8 +161,7 @@ export const products = [
   {
     name: "Offpride-oz",
     price: "Rs. 116.00",
-    composition:
-      "Enteric Coated Pantoprazole Sodium & Sustained Release Domperidone Capsules",
+    composition: "Ofloxacin 200mg + Ornidazole 500mg",
     hightlights: [
       "Diabetic and decubitus Infection",
       "Aspiration Pnuemonia",
@@ -243,127 +255,484 @@ export const products = [
     name: "Cifipure-0",
     price: "Rs. 95.00",
     composition: "Cefixime & Ofloxacin Tablets",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Broad-spectrum antibiotic for a wide range of bacterial infections",
+      "Effective against respiratory, urinary, and gastrointestinal infections",
+      "Rapid bacteriological eradication",
+      "Suitable for mild to severe infections",
+    ],
+    uses: [
+      "- Treatment of respiratory tract infections (e.g., bronchitis, pneumonia)",
+      "- Used for urinary tract infections (UTIs)",
+      "- Effective in typhoid fever",
+      "- Helps treat skin and soft tissue infections",
+      "- Prescribed for ear, sinus, and throat infections",
+      "- Useful in certain sexually transmitted infections (e.g., gonorrhea)",
+      "- Can be used for gastrointestinal infections like traveler's diarrhea",
+    ],
+    howToUse: [
+      "- Take the tablet exactly as prescribed by your doctor.",
+      "- Swallow whole with water; do not chew, crush, or break.",
+      "- Can be taken with or without food, but taking with food may help reduce stomach upset.",
+      "- Complete the full course even if you start feeling better.",
+      "- Do not skip doses or stop early to avoid antibiotic resistance.",
+      "- If you experience severe diarrhea, rash, swelling, or difficulty breathing, stop use and consult your doctor immediately.",
+    ],
   },
   {
     name: "Gestopride 200SR",
     price: "Rs. 95.00",
     composition:
       "Natural Micronized Progesterone Sustained Release Tablets 200 mg",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Supports hormone balance in women",
+      "Helps maintain pregnancy in women with progesterone deficiency",
+      "Sustained release formulation for prolonged effect",
+      "Bioidentical hormone for better absorption and fewer side effects",
+    ],
+    uses: [
+      "- Used for hormone replacement therapy in women with progesterone deficiency",
+      "- Helps support early pregnancy in women with a history of recurrent miscarriage or infertility",
+      "- Prescribed for menstrual disorders such as irregular periods or amenorrhea",
+      "- Used in assisted reproductive technology (ART) protocols to support embryo implantation",
+      "- May be used to treat premenstrual syndrome (PMS) or premenstrual dysphoric disorder (PMDD)",
+    ],
+    howToUse: [
+      "- Take the tablet exactly as prescribed by your doctor, usually once daily.",
+      "- Swallow whole with water; do not crush or chew the tablet.",
+      "- It is best taken at the same time each day to maintain consistent hormone levels.",
+      "- Can be taken with or without food.",
+      "- Do not stop taking the medicine abruptly without consulting your doctor.",
+      "- Inform your doctor if you experience unusual vaginal bleeding, severe headache, or vision changes.",
+    ],
   },
   {
     name: "Enofer-XT",
     price: "Rs. 95.00",
     composition:
       "Ferrous Asparto Glycinate, Methylcobalamin & L-Methylfolate Tablets",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Advanced iron supplement with enhanced absorption",
+      "Supports healthy red blood cell formation",
+      "Helps prevent and treat iron deficiency anemia",
+      "Contains active forms of Vitamin B12 and folate for better efficacy",
+    ],
+    uses: [
+      "- Used for the treatment and prevention of iron deficiency anemia",
+      "- Supports management of anemia during pregnancy and lactation",
+      "- Helps in cases of nutritional deficiencies related to iron, Vitamin B12, and folate",
+      "- Aids in improving energy levels and reducing fatigue caused by anemia",
+      "- Beneficial for individuals with poor dietary intake or increased nutritional requirements",
+    ],
+    howToUse: [
+      "- Take the tablet exactly as prescribed by your doctor, usually once daily.",
+      "- Swallow whole with water; do not crush or chew the tablet.",
+      "- It is best taken after meals to minimize stomach upset.",
+      "- Avoid taking with tea, coffee, or dairy products as they may reduce absorption.",
+      "- Do not exceed the recommended dose.",
+      "- Inform your doctor if you experience persistent stomach upset, allergic reactions, or unusual symptoms.",
+    ],
   },
   {
     name: "Multipride Injection",
     price: "Rs. 95.00",
     composition:
       "Methylcobalamin, Pyridoxine, Nicotinamide & D-Panthenol Injection",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Rich combination of essential B vitamins",
+      "Supports nerve health and regeneration",
+      "Helps improve energy metabolism",
+      "Aids in the treatment of vitamin B-complex deficiencies",
+    ],
+    uses: [
+      "- Used for the treatment of vitamin B12 and B-complex deficiencies",
+      "- Supports management of peripheral neuropathy and nerve pain",
+      "- Helps in the treatment of anemia caused by vitamin B12 deficiency",
+      "- Useful in cases of general weakness, fatigue, and poor nutrition",
+      "- Can be used as adjunct therapy in neurological disorders",
+    ],
+    howToUse: [
+      "- This injection should be administered by a healthcare professional only.",
+      "- The dose and frequency will be determined by your doctor based on your condition.",
+      "- Do not self-administer or adjust the dose without medical advice.",
+      "- Inform your doctor if you have any allergies or are on other medications.",
+      "- Report any side effects such as pain at the injection site, rash, or dizziness to your doctor immediately.",
+    ],
   },
   {
     name: "Koral-Fort",
     price: "Rs. 95.00",
     composition:
       "Coral Calcium, Cyanocobalamin, L-Methylfolate, Vitamin B6, DHA & Vitamin D3 Tablets",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Comprehensive blend for bone and nerve health",
+      "Supports healthy brain and cognitive development",
+      "Promotes optimal calcium and vitamin D3 absorption",
+      "Helps maintain cardiovascular and immune system function",
+    ],
+    uses: [
+      "- Used for the prevention and treatment of calcium and vitamin D3 deficiencies",
+      "- Supports bone strength and density, reducing the risk of osteoporosis",
+      "- Aids in the management of vitamin B12 and folate deficiencies",
+      "- Helps improve nerve function and supports neurological health",
+      "- Beneficial for pregnant and lactating women to support fetal and maternal health",
+      "- Promotes overall growth and development in children and adults",
+    ],
+    howToUse: [
+      "- Take the tablet exactly as prescribed by your doctor, usually once daily.",
+      "- Swallow whole with water; do not crush or chew the tablet.",
+      "- Best taken after meals to enhance absorption and reduce stomach upset.",
+      "- Do not exceed the recommended dose.",
+      "- Inform your doctor if you are pregnant, breastfeeding, or taking other supplements or medications.",
+      "- Report any unusual symptoms or allergic reactions to your healthcare provider promptly.",
+    ],
   },
   {
     name: "Purepanta-IV",
     price: "Rs. 95.00",
     composition: "Pantoprazole for Injection",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Proton pump inhibitor for rapid acid suppression",
+      "Effective in treating acid-related stomach and esophagus conditions",
+      "Provides quick relief from gastric acidity and heartburn",
+      "Suitable for use in hospitalized or critically ill patients",
+    ],
+    uses: [
+      "- Used for the treatment of gastroesophageal reflux disease (GERD) and erosive esophagitis",
+      "- Helps in managing Zollinger-Ellison syndrome and other conditions involving excessive stomach acid production",
+      "- Provides relief from symptoms of acid reflux, such as heartburn and indigestion",
+      "- Used in the prevention and treatment of stress ulcers in hospitalized patients",
+      "- Can be used as part of combination therapy for Helicobacter pylori eradication",
+    ],
+    howToUse: [
+      "- This injection should be administered by a healthcare professional only.",
+      "- The dose and frequency will be determined by your doctor based on your medical condition.",
+      "- Do not self-administer or adjust the dose without consulting your doctor.",
+      "- Inform your healthcare provider about any allergies or current medications before receiving the injection.",
+      "- Report any side effects such as rash, swelling, or difficulty breathing to your doctor immediately.",
+    ],
   },
   {
     name: "GERD-RAFT",
     price: "Rs. 95.00",
     composition:
       "Sodium Alginate, Sodium Bicarbonate, Calcium Carbonate Oral Suspension",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Provides rapid relief from heartburn and acid reflux",
+      "Forms a protective raft over stomach contents to prevent acid backflow",
+      "Neutralizes excess stomach acid",
+      "Suitable for use in GERD, indigestion, and related symptoms",
+    ],
+    uses: [
+      "- Used for the symptomatic relief of gastroesophageal reflux disease (GERD)",
+      "- Helps manage heartburn, acid indigestion, and sour stomach",
+      "- Provides quick relief from symptoms caused by excessive stomach acid",
+      "- Can be used after meals and at bedtime for ongoing protection",
+      "- Suitable for adults and children as directed by a doctor",
+    ],
+    howToUse: [
+      "- Shake the bottle well before use.",
+      "- Take the oral suspension exactly as prescribed by your doctor or as directed on the label.",
+      "- Usually taken after meals and at bedtime for best results.",
+      "- Measure the dose carefully using a measuring cup or spoon.",
+      "- Do not exceed the recommended dose.",
+      "- Inform your doctor if symptoms persist or worsen, or if you experience any allergic reactions.",
+    ],
   },
   {
     name: "PureCough-LS",
     price: "Rs. 95.00",
     composition: "Ambroxol Hcl, Levosalbutamol & Guaiphenesin Syrup",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Triple-action formula for effective cough relief",
+      "Helps loosen and clear mucus from the airways",
+      "Relieves chest congestion and eases breathing",
+      "Suitable for both adults and children (as directed by a doctor)",
+    ],
+    uses: [
+      "- Used for the treatment of productive (wet) cough associated with respiratory tract infections",
+      "- Helps in the management of conditions like bronchitis, asthma, and chronic obstructive pulmonary disease (COPD)",
+      "- Aids in loosening and expelling thick mucus from the lungs",
+      "- Provides relief from chest congestion and facilitates easier breathing",
+      "- Can be used as supportive therapy in upper and lower respiratory tract infections",
+    ],
+    howToUse: [
+      "- Shake the bottle well before each use.",
+      "- Take the syrup exactly as prescribed by your doctor or as mentioned on the label.",
+      "- Use a proper measuring cup or spoon to ensure accurate dosing.",
+      "- Can be taken with or without food.",
+      "- Do not exceed the recommended dose.",
+      "- Inform your doctor if you experience any side effects such as allergic reactions, palpitations, or persistent cough.",
+    ],
   },
   {
     name: "ZYDINE",
     price: "Rs. 95.00",
     composition: "Fungal Diastase, Pepsin & B-Complex Syrup",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Supports healthy digestion and nutrient absorption",
+      "Enzyme-rich formula helps break down carbohydrates and proteins",
+      "Fortified with B-complex vitamins for energy and metabolism",
+      "Provides relief from indigestion, bloating, and loss of appetite",
+    ],
+    uses: [
+      "- Used for the treatment of indigestion and digestive disorders",
+      "- Helps relieve symptoms of bloating, flatulence, and abdominal discomfort",
+      "- Aids in improving appetite and overall digestive health",
+      "- Supports recovery in cases of poor digestion due to illness or medication",
+      "- Beneficial for individuals with enzyme deficiency or malnutrition",
+    ],
+    howToUse: [
+      "- Shake the bottle well before use.",
+      "- Take the syrup exactly as prescribed by your doctor or as mentioned on the label.",
+      "- Use a proper measuring cup or spoon to ensure accurate dosing.",
+      "- Usually taken after meals for best results.",
+      "- Do not exceed the recommended dose.",
+      "- Inform your doctor if you experience any allergic reactions or persistent digestive issues.",
+    ],
   },
   {
     name: "Montipure-LC",
     price: "Rs. 95.00",
     composition:
       "Montelukast Sodium & Levocetirizine Hydrochloride Tablets I.P.",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Dual-action formula for allergy and asthma symptom relief",
+      "Reduces sneezing, runny nose, and nasal congestion",
+      "Helps prevent asthma attacks and breathing difficulties",
+      "Non-sedating and suitable for long-term use as prescribed",
+    ],
+    uses: [
+      "- Used for the treatment and prevention of allergic rhinitis (hay fever) and seasonal allergies",
+      "- Helps manage symptoms such as sneezing, runny nose, itching, and watery eyes",
+      "- Effective in controlling chronic urticaria (hives) and skin allergies",
+      "- Used as adjunct therapy in asthma to prevent breathing difficulties and wheezing",
+      "- Provides relief from nasal congestion and improves overall respiratory comfort",
+    ],
+    howToUse: [
+      "- Take the tablet exactly as prescribed by your doctor, usually once daily.",
+      "- Swallow the tablet whole with water; do not crush or chew.",
+      "- Can be taken with or without food.",
+      "- Take at the same time each day for best results.",
+      "- Do not exceed the recommended dose.",
+      "- Inform your doctor if you experience any side effects such as drowsiness, dry mouth, or allergic reactions.",
+    ],
   },
   {
     name: "L-BINO",
     price: "Rs. 95.00",
     composition: "Pre & Probiotic Capsules",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Promotes healthy gut flora and digestion",
+      "Supports immune system function",
+      "Helps restore natural balance of intestinal bacteria",
+      "Aids in the prevention of antibiotic-associated diarrhea",
+    ],
+    uses: [
+      "- Used to improve digestive health and maintain gut flora balance",
+      "- Helps prevent and manage diarrhea, especially after antibiotic use",
+      "- Supports relief from symptoms of irritable bowel syndrome (IBS) and bloating",
+      "- Aids in the management of constipation and other gastrointestinal disturbances",
+      "- Beneficial for enhancing nutrient absorption and overall gut health",
+    ],
+    howToUse: [
+      "- Take the capsule exactly as prescribed by your doctor or as directed on the label.",
+      "- Swallow whole with water; do not crush or chew the capsule.",
+      "- Can be taken with or without food, as advised by your doctor.",
+      "- Take at the same time each day for best results.",
+      "- Do not exceed the recommended dose.",
+      "- Inform your doctor if you experience any side effects such as abdominal discomfort, allergic reactions, or persistent digestive issues.",
+    ],
   },
   {
     name: "ARZINO",
     price: "Rs. 95.00",
     composition:
       "L-Arginine Proanthocyanidin, DHA, Vitamin B6, Folic Acid & Lycopene Tablets",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Supports cardiovascular and reproductive health",
+      "Rich in antioxidants for cellular protection",
+      "Promotes healthy pregnancy and fetal development",
+      "Enhances blood flow and overall wellness",
+    ],
+    uses: [
+      "- Used to support maternal health during pregnancy",
+      "- Helps improve blood circulation and vascular function",
+      "- Aids in fetal growth and development by providing essential nutrients",
+      "- Supports antioxidant defense against cellular damage",
+      "- Beneficial in reducing the risk of pregnancy complications such as preeclampsia",
+      "- Can be used to enhance male and female reproductive health",
+    ],
+    howToUse: [
+      "- Take the tablet exactly as prescribed by your doctor, usually once daily.",
+      "- Swallow whole with water; do not crush or chew the tablet.",
+      "- It is best taken after meals to improve absorption and reduce stomach upset.",
+      "- Do not exceed the recommended dose.",
+      "- Inform your doctor if you are pregnant, breastfeeding, or taking other supplements or medications.",
+      "- Report any unusual symptoms or allergic reactions to your healthcare provider promptly.",
+    ],
   },
   {
     name: "Vonocef 500",
     price: "Rs. 95.00",
     composition: "Cefuroxime Axetil Tablets IP 500mg",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Broad-spectrum antibiotic effective against various bacterial infections",
+      "Second-generation cephalosporin with enhanced activity",
+      "Suitable for respiratory, urinary, and skin infections",
+      "Well-tolerated and effective for both adults and children (as prescribed)",
+    ],
+    uses: [
+      "- Used for the treatment of respiratory tract infections such as bronchitis, pneumonia, and sinusitis",
+      "- Helps manage urinary tract infections (UTIs)",
+      "- Effective in treating skin and soft tissue infections",
+      "- Prescribed for ear infections (otitis media) and throat infections (pharyngitis, tonsillitis)",
+      "- Can be used for certain sexually transmitted infections as advised by your doctor",
+    ],
+    howToUse: [
+      "- Take the tablet exactly as prescribed by your doctor, usually once or twice daily.",
+      "- Swallow whole with water; do not crush or chew the tablet.",
+      "- Best taken after food to enhance absorption.",
+      "- Complete the full course of treatment, even if you feel better before finishing the medication.",
+      "- Do not skip doses or stop early to avoid antibiotic resistance.",
+      "- Inform your doctor if you experience any side effects such as diarrhea, rash, or allergic reactions.",
+    ],
   },
   {
     name: "Kocal-D3",
     price: "Rs. 95.00",
     composition: "Cholecalciferol 60,000 IU Softgel Capsules",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "High-strength vitamin D3 supplement",
+      "Supports bone and teeth health",
+      "Helps improve calcium absorption in the body",
+      "Boosts immunity and overall well-being",
+    ],
+    uses: [
+      "- Used for the prevention and treatment of vitamin D3 deficiency",
+      "- Helps manage and prevent bone disorders such as osteoporosis and rickets",
+      "- Supports healthy bone growth and mineralization",
+      "- Aids in the treatment of low calcium levels in the blood",
+      "- Beneficial for individuals with limited sun exposure or increased vitamin D requirements",
+    ],
+    howToUse: [
+      "- Take the softgel capsule exactly as prescribed by your doctor, usually once weekly or as directed.",
+      "- Swallow whole with water; do not chew or crush the capsule.",
+      "- Best taken after meals to enhance absorption.",
+      "- Do not exceed the recommended dose.",
+      "- Inform your doctor if you are pregnant, breastfeeding, or taking other supplements or medications.",
+      "- Report any unusual symptoms or allergic reactions to your healthcare provider promptly.",
+    ],
   },
   {
     name: "Painpure-Ace",
     price: "Rs. 95.00",
     composition: "Aceclofenac & Paracetamol Tablets",
-    hightlights: [],
-    uses: [],
-    howToUse: [],
+    hightlights: [
+      "Dual-action pain relief and anti-inflammatory formula",
+      "Effective in reducing fever, swelling, and joint pain",
+      "Provides rapid relief from musculoskeletal pain",
+      "Suitable for short-term use under medical supervision",
+    ],
+    uses: [
+      "- Used for the relief of mild to moderate pain and inflammation",
+      "- Helps manage conditions such as osteoarthritis, rheumatoid arthritis, and ankylosing spondylitis",
+      "- Effective in treating muscle pain, back pain, dental pain, and headache",
+      "- Reduces fever and associated discomfort",
+      "- Can be used for post-operative pain as advised by your doctor",
+    ],
+    howToUse: [
+      "- Take the tablet exactly as prescribed by your doctor, usually once or twice daily.",
+      "- Swallow whole with water; do not crush or chew the tablet.",
+      "- Best taken with food or after meals to minimize stomach upset.",
+      "- Do not exceed the recommended dose or duration of use.",
+      "- Avoid consuming alcohol while taking this medication.",
+      "- Inform your doctor if you experience any side effects such as stomach pain, nausea, rash, or signs of liver problems.",
+    ],
   },
 ];
+
+export const services = [
+  {
+    icon: GiStarsStack,
+    title: "High Efficiency",
+    description:
+      "We have high quality, affordable and innovative medicines solutions as per customer's choice and requirement.",
+  },
+  {
+    icon: BiSolidOffer,
+    title: "Competitive Rates",
+    description:
+      "Pure pride as a team – works efficiently to provide quality pharma products at most competitive rates.",
+  },
+  {
+    icon: FaTruck,
+    title: "Fast Delivery",
+    description:
+      "We are actively deliver the order as soon as we get confirmation by the customers.",
+  },
+  {
+    icon: RiCustomerService2Fill,
+    title: "Customer Service",
+    description:
+      "The company focuses on its customers and have set-ups with devoted customer services.",
+  },
+  {
+    icon: FaShoppingCart,
+    title: "Wide Distribution Network",
+    description:
+      "We have a specialist team of distribution network, which tracks entire ongoing business.",
+  },
+  {
+    icon: CgPill,
+    title: "High Quality Products",
+    description:
+      "We re-test all active ingredients of the medicine to be manufactured, and ensure that all are as per standards.",
+  },
+];
+export const contactUs = [
+  {
+    icon: MdLocationOn,
+    title: "Address",
+    description:
+      "NeuSource Startup Minds India Limited B-11, Block-B, Ground Floor,Shankar Garden, Vikas Puri New Delhi, India 110018",
+  },
+  {
+    icon: FaPhoneAlt,
+    title: "Contact No",
+    description: "+91 9993946660",
+  },
+  {
+    icon: TfiAlarmClock,
+    title: "Opening Hours",
+    description: "Monday to Friday: 8am to 4pm Saturday: 10am to 3pm",
+  },
+  {
+    icon: IoIosMail,
+    title: "Mail",
+    description: "purepridepharma@gmail.com",
+  },
+];
+
+export const formFields = [
+  {
+    icon: IoIosContact,
+    type: 'text',
+    placeholder: 'Enter your name'
+  },
+  {
+    icon: RiMailSendFill,
+    type: 'email',
+    placeholder: 'Your mail'
+  },
+  {
+    icon: FaPhoneAlt,
+    type: 'phone',
+    placeholder: 'Phone Number'
+  },
+  {
+    icon: IoIosChatbubbles,
+    type: 'textarea',
+    placeholder: 'Write your message'
+  },
+]
