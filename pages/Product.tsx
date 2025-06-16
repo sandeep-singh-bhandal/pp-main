@@ -5,7 +5,12 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { products } from "@/constants/config";
 
 const Product = ({ name }: { name: string }) => {
-  const formattedName = name.includes('%2B')? name.replace('%2B', '+') : name // for handling '+' in the URL
+  const formattedName =
+    name === undefined
+      ? ""
+      : name.includes("%2B")
+      ? name.replace("%2B", "+")
+      : name; // for handling '+' in the URL
 
   return products.map((product, index) => {
     if (
