@@ -14,7 +14,9 @@ export default function Component({
 }) {
   const [mouseOver, setmouseOver] = useState<boolean>(false);
   console.log(
-    name.includes(" ")
+    name == "CIFIPURE-LB"
+      ? "cifipure-LB"
+      : name.includes(" ")
       ? name.replace(" ", "-").toLowerCase()
       : name.toLowerCase()
   );
@@ -29,7 +31,9 @@ export default function Component({
           width={500}
           height={500}
           src={`/products/${
-            name.includes(" ")
+            name == "CIFIPURE-LB"
+              ? "cifipure-LB"
+              : name.includes(" ")
               ? name.replace(" ", "-").toLowerCase()
               : name.toLowerCase()
           }.png`}
