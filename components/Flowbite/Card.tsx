@@ -13,6 +13,7 @@ export default function Component({
   composition: string;
 }) {
   const [mouseOver, setmouseOver] = useState<boolean>(false);
+
   return (
     <Card
       className="max-w-full md:max-w-xs mb-8 md:mb-16 cursor-pointer p-3 hover:scale-[1.03] transition-all duration-300"
@@ -23,7 +24,11 @@ export default function Component({
           width={500}
           height={500}
           src={`/products/${
-            name.includes(" ")
+            name == "CIFIPURE-LB"
+              ? "cifipure-LB"
+              : name == "Gestopride 200SR"
+              ? "gestopride-200SR"
+              : name.includes(" ")
               ? name.replace(" ", "-").toLowerCase()
               : name.toLowerCase()
           }.png`}
