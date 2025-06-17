@@ -25,13 +25,13 @@ const Product = ({ name }: { name: string }) => {
             <div className="w-5/12 max-sm:w-full relative">
               <Image
                 src={`/products/${
-                  name == "CIFIPURE-LB"
+                  product.name == "CIFIPURE-LB"
                     ? "cifipure-LB"
-                    : name == "Gestopride 200SR"
+                    : product.name == "Gestopride 200SR"
                     ? "gestopride-200SR"
-                    : name.includes(" ")
-                    ? name.replace(" ", "-").toLowerCase()
-                    : name.toLowerCase()
+                    : product.name.includes(" ")
+                    ? product.name.replace(" ", "-").toLowerCase()
+                    : product.name.toLowerCase()
                 }.png`}
                 height={700}
                 width={700}
