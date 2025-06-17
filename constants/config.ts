@@ -1,15 +1,12 @@
 import { GiStarsStack } from "react-icons/gi";
-import { RiCustomerService2Fill } from "react-icons/ri";
-import { FaShoppingCart, FaTruck } from "react-icons/fa";
 import { CgPill } from "react-icons/cg";
 import { BiSolidOffer } from "react-icons/bi";
 import { MdLocationOn } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
 import { TfiAlarmClock } from "react-icons/tfi";
-import { IoIosMail } from "react-icons/io";
-import { RiMailSendFill } from "react-icons/ri";
-import { IoIosContact } from "react-icons/io";
-import { IoIosChatbubbles } from "react-icons/io";
+import { RiMailSendFill,RiCustomerService2Fill } from "react-icons/ri";
+import { IoIosContact,IoIosChatbubbles,IoIosMail } from "react-icons/io";
+import { FaFacebook, FaLinkedin, FaYoutube,FaPhoneAlt,FaShoppingCart, FaTruck } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const products = [
   {
@@ -717,22 +714,81 @@ export const contactUs = [
 export const formFields = [
   {
     icon: IoIosContact,
-    type: 'text',
-    placeholder: 'Enter your name'
+    type: "text",
+    placeholder: "Enter your name",
   },
   {
     icon: RiMailSendFill,
-    type: 'email',
-    placeholder: 'Your mail'
+    type: "email",
+    placeholder: "Your mail",
   },
   {
     icon: FaPhoneAlt,
-    type: 'phone',
-    placeholder: 'Phone Number'
+    type: "phone",
+    placeholder: "Phone Number",
   },
   {
     icon: IoIosChatbubbles,
-    type: 'textarea',
-    placeholder: 'Write your message'
+    type: "textarea",
+    placeholder: "Write your message",
   },
-]
+];
+
+export const footerData = {
+  upper: {
+    description:
+      "In order to maintain defined quality standards, these medicines are thoroughly tested against numerous quality parameters under the guidance of our quality experts.",
+    reachUs: {
+        title: "Reach Us",
+        links: [
+          {
+            icon: MdLocationOn,
+            text: "B-11, Block-B, Ground Floor, Shankar Garden, Vikas Puri New Delhi, India 110018",
+          },
+          {
+            icon: FaPhoneAlt,
+            text: "+91 9993946660",
+          },
+          {
+            icon: IoIosMail,
+            text: "purepride@gmail.com",
+          },
+        ],
+      },
+      explore: {
+        title: "Explore",
+        links: [
+          { text: "About Us", href: "/about" },
+          { text: "Our Products", href: "/products" },
+          { text: "Contact Us", href: "/contact" },
+          { text: "Privacy Policy", href: "#" },
+        ],
+      },
+
+    },
+  lower: {
+    title: "© 2021, Pure Pride Pharma PVT. LTD. All Rights Reserved.",
+    button: {
+      text: "Install Distributor App",
+      href: "#",
+    },
+    socialLinks: [
+      {
+        icon: FaFacebook,
+        href: "#",
+      },
+      {
+        icon: FaLinkedin,
+        href: "#",
+      },
+      {
+        icon: FaXTwitter,
+        href: "#",
+      },
+      {
+        icon: FaYoutube,
+        href: "#",
+      },
+    ],
+  }
+};
