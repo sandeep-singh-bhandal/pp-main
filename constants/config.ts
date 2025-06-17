@@ -95,26 +95,26 @@ export const products = [
       "- Lactobacillus is a live micro-organism which restores the balance of good bacteria in the intestine that may get upset with antibiotic use or due to intestinal infections.",
     ],
   },
-  // {
-  //   name: "PAINPURE-AQ",
-  //   price: "Rs. 21.50",
-  //   composition: "Diclofenac Sodium Injection IP",
-  //   hightlights: [
-  //     "Mild to moderate pain",
-  //     "Swelling",
-  //     "Stiffness",
-  //     "Acute musculoskeletal injuries",
-  //     "Joint pain",
-  //   ],
-  //   uses: [
-  //     "Diclofenac Sodium Injection belongs to a group of medicines called nonsteroidal anti-inflammatory drugs (NSAIDs). It is used for short-term relief of pain, inflammation, and swelling. It works by blocking chemical messengers in the brain that tell us we have pain.",
-  //   ],
-  //   howToUse: [
-  //     "- Diclofenac sodium is a phenylacetic acid derivative that is a white to off-white, virtually odorless, crystalline powder.",
-  //     "- Diclofenac sodium is freely soluble in methanol, soluble in ethanol, and practically insoluble in chloroform and in dilute acid.",
-  //     "- Diclofenac sodium is sparingly soluble in water.",
-  //   ],
-  // },
+  {
+    name: "PAINPURE-AQ",
+    price: "Rs. 21.50",
+    composition: "Diclofenac Sodium Injection IP",
+    hightlights: [
+      "Mild to moderate pain",
+      "Swelling",
+      "Stiffness",
+      "Acute musculoskeletal injuries",
+      "Joint pain",
+    ],
+    uses: [
+      "Diclofenac Sodium Injection belongs to a group of medicines called nonsteroidal anti-inflammatory drugs (NSAIDs). It is used for short-term relief of pain, inflammation, and swelling. It works by blocking chemical messengers in the brain that tell us we have pain.",
+    ],
+    howToUse: [
+      "- Diclofenac sodium is a phenylacetic acid derivative that is a white to off-white, virtually odorless, crystalline powder.",
+      "- Diclofenac sodium is freely soluble in methanol, soluble in ethanol, and practically insoluble in chloroform and in dilute acid.",
+      "- Diclofenac sodium is sparingly soluble in water.",
+    ],
+  },
   {
     name: "PAINPURE-SP",
     price: "Rs. 99.50",
@@ -276,33 +276,33 @@ export const products = [
       "- If you experience severe diarrhea, rash, swelling, or difficulty breathing, stop use and consult your doctor immediately.",
     ],
   },
-  // {
-  //   name: "Gestopride 200SR",
-  //   price: "Rs. 95.00",
-  //   composition:
-  //     "Natural Micronized Progesterone Sustained Release Tablets 200 mg",
-  //   hightlights: [
-  //     "Supports hormone balance in women",
-  //     "Helps maintain pregnancy in women with progesterone deficiency",
-  //     "Sustained release formulation for prolonged effect",
-  //     "Bioidentical hormone for better absorption and fewer side effects",
-  //   ],
-  //   uses: [
-  //     "- Used for hormone replacement therapy in women with progesterone deficiency",
-  //     "- Helps support early pregnancy in women with a history of recurrent miscarriage or infertility",
-  //     "- Prescribed for menstrual disorders such as irregular periods or amenorrhea",
-  //     "- Used in assisted reproductive technology (ART) protocols to support embryo implantation",
-  //     "- May be used to treat premenstrual syndrome (PMS) or premenstrual dysphoric disorder (PMDD)",
-  //   ],
-  //   howToUse: [
-  //     "- Take the tablet exactly as prescribed by your doctor, usually once daily.",
-  //     "- Swallow whole with water; do not crush or chew the tablet.",
-  //     "- It is best taken at the same time each day to maintain consistent hormone levels.",
-  //     "- Can be taken with or without food.",
-  //     "- Do not stop taking the medicine abruptly without consulting your doctor.",
-  //     "- Inform your doctor if you experience unusual vaginal bleeding, severe headache, or vision changes.",
-  //   ],
-  // },
+  {
+    name: "Gestopride 200SR",
+    price: "Rs. 95.00",
+    composition:
+      "Natural Micronized Progesterone Sustained Release Tablets 200 mg",
+    hightlights: [
+      "Supports hormone balance in women",
+      "Helps maintain pregnancy in women with progesterone deficiency",
+      "Sustained release formulation for prolonged effect",
+      "Bioidentical hormone for better absorption and fewer side effects",
+    ],
+    uses: [
+      "- Used for hormone replacement therapy in women with progesterone deficiency",
+      "- Helps support early pregnancy in women with a history of recurrent miscarriage or infertility",
+      "- Prescribed for menstrual disorders such as irregular periods or amenorrhea",
+      "- Used in assisted reproductive technology (ART) protocols to support embryo implantation",
+      "- May be used to treat premenstrual syndrome (PMS) or premenstrual dysphoric disorder (PMDD)",
+    ],
+    howToUse: [
+      "- Take the tablet exactly as prescribed by your doctor, usually once daily.",
+      "- Swallow whole with water; do not crush or chew the tablet.",
+      "- It is best taken at the same time each day to maintain consistent hormone levels.",
+      "- Can be taken with or without food.",
+      "- Do not stop taking the medicine abruptly without consulting your doctor.",
+      "- Inform your doctor if you experience unusual vaginal bleeding, severe headache, or vision changes.",
+    ],
+  },
   {
     name: "Enofer-XT",
     price: "Rs. 95.00",
