@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-const MultiLayedBox = () => {
+const MultiLayeredBox = () => {
   return (
     <section className="bg-white w-full pb-10 lg:pb-20">
       <div
-        className={'relative flex max-[1300px]:w-10/12 max-lg:flex-wrap w-3/4 max-md:w-full max-md:mx-0 gap-30 max-[1200px]:gap-10 max-md:gap-0 lg:justify-center mx-auto mt-10'}
+        className={
+          "relative flex max-[1300px]:w-10/12 max-lg:flex-wrap w-3/4 max-md:w-full max-md:mx-0 gap-30 max-[1200px]:gap-10 max-md:gap-0 lg:justify-center mx-auto mt-10"
+        }
       >
         <div className="w-1/2 h-auto z-0 max-lg:w-7/12 max-md:w-1/2 max-sm:w-full relative mx-auto  ">
           <div className="w-[500px] max-[1200px]:w-[400px] max-lg:w-[500px] max-md:w-[400px] max-sm:w-full">
@@ -63,4 +65,4 @@ const MultiLayedBox = () => {
   );
 };
 
-export default MultiLayedBox;
+export default MultiLayeredBox;

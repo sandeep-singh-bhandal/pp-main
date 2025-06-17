@@ -22,7 +22,11 @@ export default function Component({
         <Image
           width={500}
           height={500}
-          src={`/products/${name.toLowerCase()}.png`}
+          src={`/products/${
+            name.includes(" ")
+              ? name.replace(" ", "-").toLowerCase()
+              : name.toLowerCase()
+          }.png`}
           alt="image 1"
         />
       )}

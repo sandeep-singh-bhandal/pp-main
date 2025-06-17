@@ -7,6 +7,8 @@ import { IoPricetagOutline } from "react-icons/io5";
 import { GiMedicines } from "react-icons/gi";
 import Services from "@/components/Services";
 import Clients from "@/components/Clients";
+import { motion } from "framer-motion";
+import { slideInFromBottom } from "@/components/animations/animation";
 
 const Hero = () => {
   return (
@@ -14,17 +16,32 @@ const Hero = () => {
       <section className="mt-[135px] max-[640px]:mt-[80px]">
         <div className="relative h-fit bg-[url('/carousel/1.jpg')] bg-cover flex flex-wrap">
           <div className="w-1/2 max-md:w-full max-md:mt-16 flex flex-col justify-center pl-10 md:pl-20">
-            <h1 className="text-white underline text-[26px] max-sm:text-2xl mb-[18px] playfair-display italic font-[700]">
+            <motion.h1
+              initial="hidden"
+              animate="visible"
+              variants={slideInFromBottom(0.2)}
+              className="text-white underline text-[26px] max-sm:text-2xl mb-[18px] playfair-display italic font-[700]"
+            >
               Pharmaceutical
-            </h1>
-            <span className="text-[54px] max-sm:text-4xl text-white mb-[25px] font-[700] exo leading-[1.2em]">
+            </motion.h1>
+            <motion.span
+              initial="hidden"
+              animate="visible"
+              variants={slideInFromBottom(0.5)}
+              className="text-[54px] max-sm:text-4xl text-white mb-[25px] font-[700] exo leading-[1.2em]"
+            >
               Best healthcare <br />
               solution
-            </span>
-            <button className="w-fit text-white  bg-[#223A66] py-[14px] px-[53px] rounded-full flex items-center gap-2">
+            </motion.span>
+            <motion.button
+              initial="hidden"
+              animate="visible"
+              variants={slideInFromBottom(0.8)}
+              className="w-fit text-white  bg-[#223A66] py-[14px] px-[53px] rounded-full flex items-center gap-2"
+            >
               {" "}
               Our Products <IoIosArrowForward className="scale-125" />{" "}
-            </button>
+            </motion.button>
           </div>
 
           <div className="w-1/2 max-md:w-full flex justify-center">

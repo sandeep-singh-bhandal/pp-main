@@ -14,10 +14,6 @@ const Product = ({ name }: { name: string }) => {
   : name;
   
   return products.map((product, index) => {
-    console.log(product.name.includes(" ")
-        ? product.name.replace(" ", "-").toLowerCase()
-        : product.name.toLowerCase());
-
     if (
       (product.name.includes(" ")
         ? product.name.replace(" ", "-").toLowerCase()
