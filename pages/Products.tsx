@@ -12,9 +12,13 @@ const Products = () => {
         {products.map(({ name, price, composition }, index) => (
           <Link
             href={`/products/${
-              name.includes(" ")
-                ? name.replace(" ", "-").toLowerCase()
-                : name.toLowerCase()
+              name == "CIFIPURE-LB"
+              ? "cifipure-LB"
+              : name == "Gestopride 200SR"
+              ? "gestopride-200SR"
+              : name.includes(" ")
+              ? name.replace(" ", "-").toLowerCase()
+              : name.toLowerCase()
             }`}
             key={index}
             className="mx-auto w-fit"
