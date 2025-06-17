@@ -3,9 +3,6 @@ import Link from "next/link";
 import React from "react";
 import { footerData } from "@/constants/config";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
-import { MdLocationOn } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-
 
 const Footer = () => {
   return (
@@ -22,14 +19,8 @@ const Footer = () => {
               {footerData.upper.reachUs.title}
             </h1>
             {footerData.upper.reachUs.links.map((link, index) => {
-              const Icon = link.icon;
               return (
                 <div key={index} className="flex gap-2">
-                  <Icon
-                    className={`h-5 w-5 mt-1 ${
-                      Icon == MdLocationOn && "scale-[2]" || Icon == FaPhoneAlt && 'scale-[0.8]'
-                    }`}
-                  />
                   <Link key={index} href={"#"}>
                     {link.text}
                   </Link>
