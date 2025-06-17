@@ -14,11 +14,7 @@ export default function Component({
 }) {
   const [mouseOver, setmouseOver] = useState<boolean>(false);
   console.log(
-    name == "CIFIPURE-LB"
-      ? "cifipure-LB"
-      : name.includes(" ")
-      ? name.replace(" ", "-").toLowerCase()
-      : name.toLowerCase()
+    name
   );
 
   return (
@@ -33,6 +29,8 @@ export default function Component({
           src={`/products/${
             name == "CIFIPURE-LB"
               ? "cifipure-LB"
+              : name == "Gestopride 200SR"
+              ? "gestopride-200SR"
               : name.includes(" ")
               ? name.replace(" ", "-").toLowerCase()
               : name.toLowerCase()
