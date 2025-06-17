@@ -5,14 +5,13 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { products } from "@/constants/config";
 
 const Product = ({ name }: { name: string }) => {
-  
   const formattedName =
-  name === undefined
-  ? ""
-  : name.includes("%2B") // for handling
-  ? name.replace("%2B", "+") // '+' in the URL
-  : name;
-  
+    name === undefined
+      ? ""
+      : name.includes("%2B") // for handling
+      ? name.replace("%2B", "+") // '+' in the URL
+      : name;
+
   return products.map((product, index) => {
     if (
       (product.name.includes(" ")
@@ -26,9 +25,13 @@ const Product = ({ name }: { name: string }) => {
             <div className="w-5/12 max-sm:w-full relative">
               <Image
                 src={`/products/${
-                  product.name.includes(" ")
-                    ? product.name.replace(" ", "-").toLowerCase()
-                    : product.name.toLowerCase()
+                  name == "CIFIPURE-LB"
+                    ? "cifipure-LB"
+                    : name == "Gestopride 200SR"
+                    ? "gestopride-200SR"
+                    : name.includes(" ")
+                    ? name.replace(" ", "-").toLowerCase()
+                    : name.toLowerCase()
                 }.png`}
                 height={700}
                 width={700}
