@@ -13,6 +13,12 @@ export default function Component({
   composition: string;
 }) {
   const [mouseOver, setmouseOver] = useState<boolean>(false);
+  console.log(
+    name.includes(" ")
+      ? name.replace(" ", "-").toLowerCase()
+      : name.toLowerCase()
+  );
+
   return (
     <Card
       className="max-w-full md:max-w-xs mb-8 md:mb-16 cursor-pointer p-3 hover:scale-[1.03] transition-all duration-300"

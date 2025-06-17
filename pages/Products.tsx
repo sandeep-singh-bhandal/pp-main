@@ -8,7 +8,7 @@ const Products = () => {
     <section className="max-sm:mt-[80px] mt-[135px] py-10">
       <h1 className="text-4xl md:text-5xl font-bold exo text-center pb-8 md:pb-16">Our Products</h1>
 
-      <div className="flex flex-wrap lg:w-10/12 md:mx-auto px-8 md:px-0 md:w-fit lg:px-0 justify-center">
+      <div className="flex flex-wrap lg:w-10/12 mx-auto px-8 md:px-0 md:w-fit lg:px-0 justify-center">
         {products.map(({ name, price, composition }, index) => (
           <Link
             href={`/products/${

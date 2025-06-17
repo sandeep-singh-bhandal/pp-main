@@ -22,7 +22,7 @@ const Product = ({ name }: { name: string }) => {
       return (
         <section className="mt-[135px] w-full max-sm:mt-[80px]" key={index}>
           <GreenOverlay />
-          <div className="w-3/4 max-sm:w-full mx-auto py-32 px-12 max-sm:px-8 max-sm:py-16 max-sm:pb-8 flex flex-wrap gap-24 max-sm:gap-12">
+          <div className="w-3/4 max-sm:w-full mx-auto py-32 px-12 max-sm:px-8 max-sm:py-16 max-sm:pb-8 flex max-sm:flex-wrap gap-24 max-sm:gap-12">
             <div className="w-5/12 max-sm:w-full relative">
               <Image
                 src={`/products/${
@@ -73,7 +73,7 @@ const Product = ({ name }: { name: string }) => {
               </div>
             </div>
           </div>
-          <div className="w-3/4 max-sm:w-full mx-auto flex flex-wrap mb-20 max-sm:mb-10 px-12 max-sm:px-8">
+          <div className="w-3/4 max-sm:w-full mx-auto flex max-sm:flex-wrap mb-20 max-sm:mb-10 px-12 max-sm:px-8">
             <h1 className="exo text-[32px] max-sm:text-[28px] font-[700] text-[#222] w-3/12 max-sm:w-full max-sm:mb-3 ">
               How Should I Use This Medicine?
             </h1>

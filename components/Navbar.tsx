@@ -50,7 +50,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col items-center justify-center h-full">
             <Image
-              src="/images/logo.png"
+              src="/icons/logo.png"
               alt="PurePride"
               height={180}
               width={180}
